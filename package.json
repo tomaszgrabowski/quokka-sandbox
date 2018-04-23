@@ -1,0 +1,36 @@
+{
+  "name": "quokka-browser-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watchAll --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.3",
+    "jsdom-quokka-plugin": "^1.0.11",
+    "ts-jest": "^22.4.4",
+    "ts-node": "^6.0.0",
+    "typescript": "^2.8.3"
+  },
+  "quokka": {
+    "plugins": [
+      "jsdom-quokka-plugin"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
