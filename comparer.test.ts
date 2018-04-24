@@ -14,11 +14,11 @@ describe('When sort function calls the comparer function', ()=>{
         expect(compare("name")(a,b)).toBe(1);
     });
     
-    test('Shuld return -1 when comparing less value to greater', ()=>{
+    test('Should return -1 when comparing less value to greater', ()=>{
         expect(compare("name")(b,a)).toBe(-1);
     });
 
-    test('Shuld return 0 when comparing less value to greater', ()=>{
+    test('Should return 0 when comparing less value to greater', ()=>{
         expect(compare("name")(a,a)).toBe(0);
     });
     
